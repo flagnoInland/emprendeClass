@@ -39,7 +39,6 @@ return [
             'prefix' => '',
         ],
 
-		/*
         'mysql' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
@@ -54,8 +53,19 @@ return [
             'strict' => true,
             'engine' => null,
         ],
-		*/
-		
+		'mysql' => [
+            'driver' => 'mysql',
+            'host' => '127.0.0.1',
+            'database' => 'profeplus_laravel',
+            'username' => 'root',
+            'password' => 'holyshit',
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix' => '',
+    ], 
+		/*
+        //PHP MY ADMIN (phpMyAdmin)
+        //https://east1-phpmyadmin.dreamhost.com/?hostname=208.113.158.136
 		'mysql' => [
 				'driver' => 'mysql',
 				'host' => '208.113.158.136',
@@ -66,7 +76,7 @@ return [
 				'collation' => 'utf8_unicode_ci',
 				'prefix' => '',
 		], 
-
+*/
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
